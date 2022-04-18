@@ -1,0 +1,82 @@
+<html>
+<head>
+	<title> login & registration</title>
+	<link rel="stylesheet" href="../Css/Login.css">
+</head>
+<body>
+<header>
+<h2>SkinCare</h2>
+		<nav>
+			<ul class="nav_links">
+				<li><a href="../index.html">HOME</a></li>
+				<li><a href="Shop.html">SHOP</a></li>
+				<li><a href="Contact_Us.html">CONTACT</a></li>
+				<li><a href="#"><img src="../Css/Images/search.png" width="25" height="25"></a></li>
+				<li><a href="#"><img src="../Css/Images/Login.png" width="25" height="25"></a></li>
+				<li><a href="Panier.html"><img src="../Css/Images/cmd.jpg" width="25" height="25"></a></li>
+			</ul>
+		</nav>
+</header>
+
+<div class="container" id="container">
+	<div class="form-container sign-up-container">
+		<form action="#">
+			<h1>Create Account</h1>
+			<input type="text" placeholder="Name" />
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<button>Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form action="#">
+			<h1>Sign in</h1>
+			<input type="email" placeholder="Email" />
+			<input type="password" placeholder="Password" />
+			<a href="#">Forgot your password?</a>
+			<button>Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay">
+			<div class="overlay-panel overlay-left">
+				<h1>Welcome Back!</h1>
+				<p>To keep connected with us please login with your personal info</p>
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+				<h1>Hello, Friend!</h1>
+				<p>Enter your personal details and start journey with us</p>
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+	<footer>
+    	<div >
+    		<ul class="social_icones">
+    			<li><a href="#"><img src="../Css/Images/facebook.png" width="30px" height="30px"></a></li>
+    			<li><a href="#"><img src="../Css/Images/instagram.png" width="30px" height="30px"></a></li>
+    			<li><a href="#"><img src="../Css/Images/pinterest.png" width="30px" height="30px"></a></li>
+    			<li><a href="#"><img src="../Css/Images/youtube.png" width="30px" height="30px"></a></li>
+    			<li><a href="#"><img src="../Css/Images/whatsapp.png" width="30px" height="30px"></a></li>
+    		</ul>
+    		<h3>© Skincare Professional Cosmetics, Inc. All worldwide rights reserved.</h3>
+    	</div>
+    </footer>
+
+<script>
+		const signUpButton = document.getElementById('signUp');
+		const signInButton = document.getElementById('signIn');
+		const container = document.getElementById('container');
+
+		signUpButton.addEventListener('click', () => {
+			container.classList.add("right-panel-active");
+		});
+
+		signInButton.addEventListener('click', () => {
+			container.classList.remove("right-panel-active");
+		});
+</script>
+</body>
+</html>

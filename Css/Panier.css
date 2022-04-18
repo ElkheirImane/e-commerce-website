@@ -1,0 +1,167 @@
+body{
+	margin:0;
+	font-family: sans-serif;
+	overflow-x: hidden;
+	padding: 0;
+}
+
+*
+{
+	box-sizing: border-box;
+	margin: 0 ;
+	padding: 0;	
+}
+li, a
+{
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500px;
+	font-size: 25px;
+	color: #000;
+	text-decoration: none;
+}
+header
+{
+	display: flex;
+	justify-content:  space-between;
+	align-items: center;
+	padding: 30px 10%;
+}
+header h2
+{
+	font-size: 30px;
+	font-style: sans-serif;
+}
+.nav_links li
+{
+	display:  inline-block;
+	padding: 0 20px;
+}
+.nav_links li a
+{
+	transition: all 0.3s ease 0s;
+}
+.nav_links li a:hover 
+{
+	color: green;
+	font-size: 30px;
+
+}
+#panier
+{
+	list-style-type: none;
+	padding: 100px 100px 25px 100px;
+	font-size: 25px;
+}
+#montant
+{
+	position: relative;
+	float: right;
+	margin-right: 6%;
+	border: 1px solid #000;
+	padding: 25px 75px 20px 75px;
+}
+#montant:hover
+{
+	background-color: rgba(0, 0, 0, 0.075);
+	color: #000;
+	transition: 1s;
+}
+.imgpoubelle
+{
+	width : 25px;
+	height : 25px;
+	margin-right: 20px;
+}
+tr
+{
+	width: 80%;
+	background-color: rgba(0, 0, 0, 0.075);
+}
+td
+{
+	padding-right: 100px;
+	padding-left: 100px;
+}
+.body
+{
+	background-color: #F2FBF2;
+	padding-bottom: 75px;
+}
+.mail_list
+{
+	height: 500px;
+	width: 100%;
+	background-image: url(../Css/Images/Home5.jpg);
+	background-position: center;
+	
+}
+.mail_list h2
+{
+	font-size: 50px;
+	text-align: center;
+	color: #D0E4D0;
+	padding: 100px;
+}
+.mail_list input, a
+{
+	position: relative;
+	align-items: center;
+	margin-top: 50px;
+	text-align: center;
+	font-size: 30px;
+}
+.mail_list input
+{
+	margin-left: 30%;
+	margin-right: 20px;
+	opacity: 0.5;
+
+}
+.mail_list a
+{
+	display: inline-block;
+	margin-top: 10px;
+	padding: 10px 20px;
+	border: 1px solid #FFF;
+	text-decoration: none;
+	color: #FFF;
+	transition: 0.5s;
+}
+.mail_list a:hover
+{
+	color: #000;
+	background-color: #FFF;
+	opacity: 0.55;
+}
+
+
+
+
+
+footer
+{
+	background-color: #669966;
+	padding: 20px;
+}
+.social_icones li
+{
+	position: relative;
+	align-items: center;
+	list-style: none;
+	display: inline-block;
+	padding: 10px;
+
+}
+.social_icones
+{
+	margin-left: 40%;
+}
+footer div h3
+{
+	position: relative;
+	text-align: center;
+	color: #FFF;
+}
+
+
+
